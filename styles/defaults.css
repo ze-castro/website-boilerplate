@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  /* MUTED COLORS */
+  --white: #fff;
+  --whitesmoke: #f5f5f5;
+  --lighter-gray: #eaeaea;
+  --light-gray: #dedede;
+  --gray: #b4b4b4;
+  --dark-gray: #676767;
+  --black: #1d1d1f;
+
+  /* COLORS */
+  --dark-red: #a52a2a;
+  --red: #be3939;
+  --light-red: #ee5757;
+  --dark-orange: #ff7f50;
+  --orange: #fc6e51;
+  --light-orange: #f89b70;
+  --light-blue: #00a0e3;
+  --blue: #0071e3;
+  --dark-blue: #0047ab;
+  --light-green: #5f9a62;
+  --green: #288d52;
+  --dark-green: #2a5d39;
+  --light-yellow: #f7d154;
+  --yellow: #f5c518;
+  --dark-yellow: #f0b400;
+  --light-purple: #d8b4fe;
+  --purple: #ac92ec;
+  --dark-purple: #7d5ab6;
+  --light-pink: #f3a5e8;
+  --pink: #ed7ddc;
+  --dark-pink: #8e267c;
+
+  /* SHADOWS */
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+  --shadow: rgba(0, 0, 0, 0.2);
+  --light-shadow: rgba(0, 0, 0, 0.1);
+
+  /* FONTs */
+  --font-family-default: 'Raleway', sans-serif;
+
+  /* FONT SIZES */
+  --font-size-title: 3rem;
+  --font-size-subtitle: 1.5rem;
+  --font-size-nav-item: 1.2rem;
+  --font-size-text: 1rem;
+  --font-size-small: 0.9rem;
+  /* FONT WEIGHTS */
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 700;
+  --font-weight-heavy: 800;
+  --font-weight-black: 900;
+
+  /* BORDER RADIUS */
+  --border-radius: 0.5rem;
+
+  /* TRANSITIONS */
+  --fast-transition: 0.1s;
+  --transition: 0.3s;
+  --slow-transition: 0.5s;
+
+  /* TEXT SPACING */
+  --line-height: 1.3;
+  --letter-spacing: 0.022em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* DEFAULTS */
+body {
+  background-color: var(--white);
+  scroll-behavior: smooth;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--black);
+}
+
+main {
+  height: calc(100vh - 50px);
+  position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* COOKIES */
+#cookies {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 999;
+  transition: var(--transition);
+  box-shadow: 0 0 1rem var(--light-shadow);
+  animation: fadeIn var(--slow-transition) forwards;
+}
+#cookies p {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-light);
+  color: var(--dark-gray);
+}
+#cookies button {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-light);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  position: absolute;
+  top: -0.7rem;
+  right: -0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light-gray);
+}
+
+/* cookies fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* cookies fade out animation */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+footer p {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-extra-light);
+  text-align: center;
+  color: var(--white);
+}
+
+/* MEDIA QUERIES */
+@media (width < 768px) {
+  #cookies {
+    padding: 0.7rem;
+  }
+  #cookies p {
+    font-size: 0.8rem;
+  }
+  #cookies button {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
