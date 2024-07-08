@@ -11,7 +11,7 @@ nav {
 nav img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: var(--border-radius);
 }
 
 nav h3 {
@@ -21,8 +21,7 @@ nav h3 {
 }
 
 nav h3 a {
-  text-decoration: none !important;
-  color: var(--black) !important;
+  color: var(--black);
 }
 
 section {
