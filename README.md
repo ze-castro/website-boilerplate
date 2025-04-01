@@ -40,24 +40,25 @@ This boilerplate is designed to kickstart your HTML/CSS/JS projects. It's easy t
 3. **Start Building:**
    - Edit the `index.html` file to add your content.
    - Customize the `index.css` file to style your project.
-   - Use the `index.js` file to add interactivity.
 
 ## Folder Structure
 
 ```plaintext
-boilerplate-html-css-js/
+website-boilerplate/
 │
-├── index.html           # Main HTML file
-├── terms.html           # Terms & Conditions HTML file
-├── css/
-│   ├── index.css        # Main CSS file
-│   ├── defaults.css     # Default styling CSS file
-│   └── terms.css        # Terms & Conditions CSS file
+├── index.html           # Home HTML file
+├── index.css            # Home CSS file
+│
+├── styles/
+│   └── main.css         # Main CSS file
+│
 ├── js/
-│   ├── cookies.js       # Cookies JavaScript file
-│   ├── swiper.js        # Carousel JavaScript file
-│   ├── dom-helper.js    # Dom Helper JavaScript file
-│   └── index.js       # Main JavaScript file
+│   └── dom-helper.js    # Main JavaScript file
+│
+├── terms-and-conditions/
+│   ├── index.html       # Terms and Conditions HTML file
+│   └── index.css        # Terms and Conditions CSS file
+│
 ├── assets/              # Directory for images
 │
 └── README.md            # Project documentation (this file)
@@ -68,14 +69,14 @@ boilerplate-html-css-js/
 Feel free to customize the boilerplate to suit your needs:
 
 - **HTML:** Modify the `index.html` file to update the content and structure of your site.
-- **CSS:** Add or edit styles in the `css/index.css` and `css/defaults.css` files to change the appearance.
-- **JavaScript:** Add scripts or edit the `js/swiper.js`, `js/dom-helper.js` and `js/cookies.js` files to enhance functionality.
+- **CSS:** Add or edit styles in the `styles/main.css` and in the other files to change the appearance.
+- **JavaScript:** Add scripts or edit the `js/dom-helper.js` file to enhance functionality.
 
 ### Adding Additional Resources
 
-- **Fonts:** Include custom fonts by linking to Google Fonts or adding them directly in your CSS.
+- **Fonts:** Include custom fonts by linking to Google Fonts or adding them directly in `styles/main.css`.
 - **Images and Media:** Place any additional media assets in the `assets/` directory or create new directories as needed.
-- **Google Analytics:** Don't forget to add your own Google Analytics tag.
+- **Analytics:** Don't forget to add your own Google Analytics tag or other tracking scripts in the `<head>` section of `index.html`.
 
 ## Contributing
 
@@ -98,13 +99,13 @@ We welcome contributions to improve this boilerplate. If you have suggestions or
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Contact
 
 For questions or suggestions, please feel free to reach out:
 
-- **GitHub:** [ZeCastroIPCA](https://github.com/ZeCastroIPCA)
+- **GitHub:** [ze-castro](https://github.com/ze-castro)
 
 ---
 
