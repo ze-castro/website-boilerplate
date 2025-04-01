@@ -148,32 +148,39 @@ footer * {
 }
 
 /* MEDIA QUERIES - for responsiveness */
-@media (width < 1000px) {
-  nav {
-    padding: 0 5rem;
+@media (width < 1024px) {
+  main {
+    padding: 5rem 0;
+    gap: 10rem;
   }
 
-  section {
-    padding: 2rem 5rem;
+  #title {
+    max-width: 600px;
+  }
+
+  #about {
+    max-width: 600px;
+  }
+
+  #contact {
+    max-width: 600px;
   }
 }
 
-@media (width < 800px) {
-  nav {
-    padding: 0 2rem;
+@media (width < 480px) {
+  main {
+    padding: 2rem;
+    gap: 7rem;
+  }
+  #title {
+    max-width: 100%;
   }
 
-  section {
-    padding: 2rem 2rem;
-  }
-}
-
-@media (width < 600px) {
-  nav {
-    padding: 0 1rem;
+  #about {
+    max-width: 100%;
   }
 
-  section {
-    padding: 1rem;
+  #contact {
+    max-width: 100%;
   }
 }
